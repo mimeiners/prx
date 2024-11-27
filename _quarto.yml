@@ -12,7 +12,21 @@ format:
     comments:
       hypothesis: true
   docx: default
-  agu-pdf: default
+  pdf:
+    documentclass: scrreptrt
+    geometry:
+      - top=30mm
+      - left=20mm
+      - heightrounded
+    hyperrefoptions:
+      - linktoc=all
+    colorlinks: true
+    linkcolor: "blue"
+    biblio-style: ieee
+  epub: default
+
+
+
 
 
 
