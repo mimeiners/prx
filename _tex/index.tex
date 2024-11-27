@@ -1,0 +1,535 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+]{agujournal2019}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{5}
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\usepackage{url} %this package should fix any errors with URLs in refs.
+\usepackage{lineno}
+\usepackage[inline]{trackchanges} %for better track changes. finalnew option will compile document with changes incorporated.
+\usepackage{soul}
+\linenumbers
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Inhaltsverzeichnis}
+\else
+  \newcommand\contentsname{Inhaltsverzeichnis}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{Abbildungsverzeichnis}
+\else
+  \newcommand\listfigurename{Abbildungsverzeichnis}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{Tabellenverzeichnis}
+\else
+  \newcommand\listtablename{Tabellenverzeichnis}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Abbildung}
+\else
+  \newcommand\figurename{Abbildung}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Tabelle}
+\else
+  \newcommand\tablename{Tabelle}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{Listingverzeichnis}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+\babelprovide[main,import]{ngerman}
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+\ifLuaTeX
+  \usepackage[german]{selnolig} % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Vorgaben für PRX-Berichte},
+  pdfauthor={Mirco Meiners},
+  pdflang={de},
+  pdfkeywords={Berichtswesen, Technischer Bericht},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\journalname{Technisches Berichtswesen}
+
+\draftfalse
+
+\begin{document}
+\title{Vorgaben für PRX-Berichte}
+
+\authors{Mirco Meiners\affil{1}}
+\affiliation{1}{Hochschule Bremen (HSB), }
+
+
+
+
+
+
+
+
+\section{Technischer Bericht}\label{technischer-bericht}
+
+Für das Erstellen eines Technischen Berichts finden Sie im nachfolgenden
+Text Hinweise, die der Arbeit von Prof.~Dr. Boes entnommen wurden (Boes,
+2012).
+
+Ziel eines Technischen Berichtes ist es, die Aufmerksamkeit des Lesers
+auf das Wesentliche zu konzentrieren und dieses in einem logischen und
+verständnisvollen Aufbau zu präsentieren. Die aufgeführten Unterlagen
+und Inhalte sollen zu einem überzeugenden Ergebnis führen.
+Entscheidungswege und Begründungen müssen ehrlich und nachvollziehbar
+dargelegt werden.
+
+Der Technische Bericht sollte in einem einfachen, konzentrierten Stil
+geschrieben sein und Missverständnisse ausschliessen. Er soll für alle
+Betroffenen sofort verständlich sein, auch wenn es sich nicht um
+besonders versierte Fachleute handelt.
+
+An dieser Stelle sei erwähnt, dass Berichte, wie sie im Rahmen von
+Projektarbeiten, Bachelor- oder Masterarbeiten erstellt werden, nur
+selten praxisgerechten Berichten entsprechen. Dies wird in der Regel
+auch nicht verlangt.
+
+\subsection{Bevor man mit dem Schreiben beginnen kann
+\ldots{}}\label{bevor-man-mit-dem-schreiben-beginnen-kann}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Analyse der Aufgabenstellung}
+
+  Folgende Fragen sollte man sich vor dem Lösen der Aufgabenstellung
+  stellen:
+
+  \begin{itemize}
+  \item
+    Was will der Auftraggeber?
+  \item
+    Ist der Auftrag/die Aufgabenstellung in der gegebenen Form sinnvoll?
+  \item
+    Wie weit darf ich von dem an mich gerichteten Auftrag abweichen?
+  \item
+    In der Praxis sollte man davon absehen, den Auftrag zu verändern.
+    Bei wissenschaftlichen Arbeiten erscheint es im Lauf der Arbeit oft
+    sinnvoll, die Aufgabenstellung anzupassen. Anpassungsvorschläge sind
+    in jedem Falle mit der Betreuung zu besprechen.
+  \end{itemize}
+\item
+  \textbf{Arbeitsprogramm und Zeitplan}
+
+  Jede Arbeit muss geplant werden. Dazu muss vorher klar sein, aus
+  welchen verschiedenen Aktivitäten sich die Arbeit in etwa
+  zusammensetzt. Sinnvoll ist es, schon am Anfang eine Grobgliederung
+  des Aufbaus (erstes Inhaltsverzeichnis) zu erstellen. Nachdem die
+  einzelnen Aktivitäten definiert worden sind, können sie auf einer
+  Zeitskala aufgetragen werden. Dabei sollte parallel zur Erarbeitung
+  von Lösungen der Aufgabenstellung genügend Zeit für die Verfassung des
+  Technischen Berichtes eingeplant werden. Zeitpläne werden oft zu
+  optimistisch bemessen. Insbesondere die Schlussredaktion braucht oft
+  viel Zeit. Darunter leidet oft eine seriöse Durchsicht. Deshalb
+  sollten unbedingt Pufferzeiten eingeplant werden. Ein Zeitplan ist
+  sinnvoll, wenn auch eine Fortschrittskontrolle durchgeführt wird.
+\item
+  \textbf{Literaturrecherche}
+
+  Der Literaturbeschaffung kommt in einer wissenschaftlichen Arbeit mehr
+  Bedeutung zu, als bei einer Arbeit mit Projektierungsschwerpunkt.
+  Wichtig ist eine ziel- bzw. problemorientierte Literaturrecherche.
+  Informationen zum Thema findet man z.B. in Zeitschriftenartikeln,
+  Buchveröffentlichungen, Tagungsbänden, Dissertationen, Studien- und
+  Diplomarbeiten und dem Internet. Die Assistenz für Wasserbau verfügt
+  eine umfassende Fachartikelsammlung zu diversen Themen, in welche von
+  den Studierenden auf Anfrage eingesehen werden kann.
+\end{enumerate}
+
+\section{Vorgaben}\label{vorgaben}
+
+Liebe Studierende,
+
+entsprechend der Bachelor-Prüfungsordnung müssen Sie einen
+Arbeitsbericht zum Praxissemester (Modul PRX) abgeben. Um Ihnen
+Nachfragen zu ersparen und die Abfassung zu erleichtern, gibt es für
+diesen Bericht Vorgaben. Der Praxissemesterbericht ist in zwei Teilen
+vorzulegen:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Zwischenbericht:} Abgabe spätestens vier Wochen nach Aufnahme
+  der Praxissemestertätigkeit.
+\item
+  \textbf{Abschlussbericht:} Abgabe spätestens zwei Wochen nach
+  Beendigung der Praxissemestertätigkeit.
+\end{enumerate}
+
+Für beide Berichte gilt:
+
+\begin{itemize}
+\item
+  Es gibt ein Titelblatt mit Überschrift der Art des Berichtes,
+  Zwischen- bzw. Abschlussbericht, über das Praxissemester von - bis und
+  in welcher Firma. Das Titelblatt soll mindestens Ihren Namen, Ihre
+  Matrikelnummer und E-Mail-Adresse sowie Name, E-Mail und Telefonnummer
+  der betreuenden Person in der Firma aufführen.
+\item
+  Der Bericht soll ein Inhaltsverzeichnis enthalten. Die Seiten sind zu
+  nummerieren. Bei Zitaten ist ein Verzeichnis der Quellen angebracht.
+\item
+  Es gibt keine Vorgabe für die Anzahl der Seiten. Der Bericht soll
+  kurz, klar und verständlich die wesentlichen Inhalte darstellen. Eine
+  Erhöhung der Seitenzahl durch langatmige Beschreibungen oder sehr
+  große Schrift ist nicht erwünscht.
+\item
+  Der Bericht wird elektronisch in der entsprechenden AULIS-Gruppe
+  abgelegt.
+\item
+  Sie finden Vorlagen im entsprechenden AULIS-Ordner.
+\end{itemize}
+
+\subsection{Der Zwischenbericht}\label{der-zwischenbericht}
+
+\begin{itemize}
+\item
+  Eine kurze Beschreibung des Unternehmens.
+\item
+  Die Beschreibung Ihres Arbeitsbereichs bzw. Ihrer Abteilung.
+\item
+  Ihre Aufgabenstellung im Praxissemester.
+\item
+  In der Regel soll der Zwischenbericht nicht mehr als 10 Seiten
+  umfassen.
+\end{itemize}
+
+\subsection{Der Abschlussbericht}\label{der-abschlussbericht}
+
+\begin{itemize}
+\item
+  Tätigkeitsbericht, inhaltlich oder zeitlich gruppiert. Aus diesem
+  Bericht soll genau hervorgehen, was Ihr eigener persönlicher Anteil an
+  den zu erledigenden Aufgaben war.
+\item
+  Besondere Ergebnisse und Erfolge Ihrer Tätigkeit.
+\item
+  Bewertende Zusammenfassung des Praxissemesters
+\item
+  Der Abschlussbericht soll Inhalte des Zwischenberichts nur soweit
+  wiederholen, wie sie zum Verständnis des Berichts notwendig sind. Die
+  Aufnahme von Tages- bzw. Wochenberichten in Listenform in den
+  Abschlussbericht ist nicht erforderlich. In der Regel soll der
+  Abschlussbericht nicht mehr als 30 Seiten umfassen.
+\end{itemize}
+
+\textbf{Viel Erfolg!}
+
+\section{Tipps zum Schreiben eines
+Berichtes}\label{tipps-zum-schreiben-eines-berichtes}
+
+\subsection{Verfassen eines ersten
+Entwurfs}\label{verfassen-eines-ersten-entwurfs}
+
+Allgemein sind beim Schreiben des ersten Entwurfs folgende Punkte zu
+beachten:
+
+\begin{itemize}
+\item
+  Die wichtigsten Punkte in einem Kapitel sollten in einem Zug
+  geschrieben werden. Will dies nicht gelingen, wird empfohlen, zu einem
+  nächsten Kapitel überzugehen, damit man trotzdem zügig vorankommt.
+\item
+  Schnell schreiben, ohne sich um fehlerhafte Formulierungen oder
+  schlecht durchdachte Ausdrücke zu kümmern.
+\item
+  Kurze Sätze verwenden!
+\item
+  Bilder, Grafiken und Tabellen evtl. noch gar nicht einfügen (nur
+  vermerken)
+\end{itemize}
+
+\subsection{Häufige Fehler}\label{huxe4ufige-fehler}
+
+\begin{itemize}
+\tightlist
+\item
+  Verwenden von \emph{ich} oder \emph{wir}
+\item
+  Substantivismus \emph{Beamtendeutsch}
+\item
+  Schachtelsätze
+\item
+  Füllwörter (Verlegenheitskonjunktionen)
+\item
+  Passiv-Konstruktionen
+\item
+  Helvetismen
+\item
+  Mode- und Fremdwörter
+\item
+  Uneinheitliche Quellenverweise im Text
+\item
+  Mangelnde Quellenverweise und mangelnde Verweise zum Anhang, zu
+  Plänen, etc.
+\end{itemize}
+
+\subsection{Abkürzunge}\label{abkuxfcrzunge}
+
+Abkürzungen sollen nur dort angewandt werden, wo Klarheit und Lesbarkeit
+des Textes nicht beeinträchtigt werden. Abkürzungen müssen in einem
+Abkürzungsverzeichnis erläutert werden, sofern es sich nicht um
+allgemein bekannte Abkürzungen handelt.
+
+\subsection{Kontrolle und
+Formatierung}\label{kontrolle-und-formatierung}
+
+Bewährt hat sich, wenn man den fertigen Entwurf mit etwas Abstand
+betrachtet (z.B. mit einem zeitlichen Abstand von mindestens einem Tag).
+Beim späteren Lesen sind folgende Punkte zu prüfen:
+
+\subsubsection{Kontrolle des Inhalts, der Verständlichkeit und der
+Sprache}\label{kontrolle-des-inhalts-der-verstuxe4ndlichkeit-und-der-sprache}
+
+\begin{itemize}
+\item
+  Stimmen die gemachten Aussagen mit den eigentlichen Zielen überein?
+\item
+  Sind die eigentlichen Ergebnisse genügend gut hervorgehoben und
+  stichhaltig begründet?
+\item
+  Ist die Gliederung des Hauptteils logisch?
+\item
+  Sind die Titel kurz und verständlich?
+\item
+  Sind die Übergänge von einem Thema zum anderen klar abgefasst?
+\item
+  Sind die Abschnitte zu lang oder zu kurz?
+\item
+  Unterstützen die gewählten Abbildungen und Tabellen den Text wirklich?
+\item
+  Sind Abbildungen und Tabellen passend beschriftet?
+\item
+  Ist die Satzstruktur klar und grammatikalisch richtig? (Kurze Sätze
+  machen den Text leichter verständlich)
+\item
+  Sind alle Tippfehler korrigiert worden?
+\item
+  Stimmt die Fachterminologie? Ist die Wahl der Fachwörter treffend?
+\item
+  Sind die Quellenangaben vollständig?
+\end{itemize}
+
+Bevor die endgültige Formatierung vorgenommen wird, sollte der Bericht
+einer anderen kompetenten Person unterbreitet werden, die konstruktive
+Kritik anbringen kann. Sollten beim Leser irgendwo Unklarheiten
+entstehen, ist dies in der Regel ein Indiz dafür, dass die Passagen
+umzuschreiben sind.
+
+\paragraph{Kontrolle der
+Endformatierung}\label{kontrolle-der-endformatierung}
+
+\begin{itemize}
+\item
+  Bei den Überschriften maximal drei (allerhöchstens vier) Stufen
+  verwenden
+\item
+  Gut leserliche Schrift wählen
+\item
+  Schriftgrösse 10 -- 12
+\item
+  Nicht zu engen Zeilenabstand verwenden
+\item
+  Alle Nummerierungen und Querverweise überprüfen
+\item
+  Abstände überprüfen
+\item
+  Schriftgrössen und Schriftart überprüfen
+\item
+  Abbildungen an die geeignete Position bringen und allenfalls in der
+  Grösse anpassen
+\item
+  Seitenumbrüche kontrollieren und gegebenenfalls neu definieren
+\item
+  Seitenangaben im Inhaltsverzeichnis überprüfen
+\end{itemize}
+
+Fremdsprachigen Studenten wird dringend empfohlen, den Technischen
+Bericht von einer muttersprachigen Person korrigieren zu lassen.
+
+Die Kontrolle des Textes in Bezug auf Inhalts-, Sprach- oder
+Formatierungsfehler ist sehr wichtig. Oft wird dafür erfahrungsgemäß zu
+wenig Zeit eingeplant. Nicht überarbeitete Texte erwecken einen
+unseriösen Eindruck. Es ist schade, wenn aus zeitlichen Gründen eine
+gründliche Überarbeitung des Berichts weggelassen wird. Der Bericht
+präsentiert schließlich das eigentliche Resultat der Arbeit! Gute
+Inhalte können bei einer schlechten Form eines Berichtes nicht
+ausreichend zur Geltung kommen.
+
+\subsection*{Referezen}\label{referezen}
+\addcontentsline{toc}{subsection}{Referezen}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\vspace{1em}
+
+\bibitem[\citeproctext]{ref-boes2012}
+Boes, R. (2012). \emph{Anforderungen und {H}inweise für das {V}erfassen
+eines {T}echnischen {B}erichts und die {P}räsentation von {P}rojekt-,
+{B}achelor-und {M}asterarbeiten}. ETH - Eidgenössische Technische
+Hochschule Zürich, VAW - Versuchsanstalt für Wasserbau, Hydrologie und
+Glaziologie.
+
+\end{CSLReferences}
+
+
+
+
+\end{document}
