@@ -230,7 +230,7 @@ wenn aus zeitlichen Gründen eine gründliche Überarbeitung des Berichts weggel
 schließlich das eigentliche Resultat der Arbeit! Gute Inhalte können bei einer schlechten Form eines Berichtes nicht
 ausreichend zur Geltung kommen.
 
-## Referezen {.unnumbered}
+## Referenzen {.unnumbered}
 
 ::: {#refs}
 :::
