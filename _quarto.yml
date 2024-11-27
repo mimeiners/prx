@@ -1,0 +1,18 @@
+project:
+  type: manuscript
+
+lang: de
+
+execute:
+  freeze: auto
+
+format:
+  html:
+    toc: true
+    comments:
+      hypothesis: true
+  docx: default
+  agu-pdf: default
+
+
+

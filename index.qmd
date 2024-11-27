@@ -1,0 +1,236 @@
+---
+title: Vorgaben für PRX-Berichte
+author:
+  - name: Mirco Meiners
+    email: Mirco.Meiners@hs-bremen.de
+    roles:
+      - Professor
+    affiliations:
+      - Hochschule Bremen (HSB)
+keywords:
+  - Berichtswesen
+  - Technischer Bericht
+abstract: |
+plain-language-summary: |
+key-points:
+  - Form
+  - Gewissenhaftigkeit
+date: last-modified
+bibliography: references.bib
+citation:
+  container-title: Technisches Berichtswesen
+number-sections: true
+---
+
+# Technischer Bericht
+
+Für das Erstellen eines Technischen Berichts finden Sie im nachfolgenden Text Hinweise, die der Arbeit von Prof. Dr.
+Boes entnommen wurden [@boes2012].
+
+Ziel eines Technischen Berichtes ist es, die Aufmerksamkeit des Lesers auf das Wesentliche zu konzentrieren und dieses
+in einem logischen und verständnisvollen Aufbau zu präsentieren. Die aufgeführten Unterlagen und Inhalte sollen zu einem
+überzeugenden Ergebnis führen. Entscheidungswege und Begründungen müssen ehrlich und nachvollziehbar dargelegt werden. 
+
+Der Technische Bericht sollte in einem einfachen, konzentrierten Stil geschrieben sein und Missverständnisse
+ausschliessen. Er soll für alle Betroffenen sofort verständlich sein, auch wenn es sich nicht um besonders versierte
+Fachleute handelt.
+
+An dieser Stelle sei erwähnt, dass Berichte, wie sie im Rahmen von Projektarbeiten, Bachelor- oder Masterarbeiten
+erstellt werden, nur selten praxisgerechten Berichten entsprechen. Dies wird in der Regel auch nicht verlangt.
+
+## Bevor man mit dem Schreiben beginnen kann ...
+
+1. **Analyse der Aufgabenstellung** 
+   
+   Folgende Fragen sollte man sich vor dem Lösen der Aufgabenstellung stellen:
+   * Was will der Auftraggeber?
+   
+   * Ist der Auftrag/die Aufgabenstellung in der gegebenen Form sinnvoll?
+   
+   * Wie weit darf ich von dem an mich gerichteten Auftrag abweichen?
+   
+   * In der Praxis sollte man davon absehen, den Auftrag zu verändern. Bei wissenschaftlichen Arbeiten erscheint es im
+    Lauf der Arbeit oft sinnvoll, die Aufgabenstellung anzupassen. Anpassungsvorschläge sind in jedem Falle mit der
+    Betreuung zu besprechen.
+
+2. **Arbeitsprogramm und Zeitplan** 
+   
+   Jede Arbeit muss geplant werden. Dazu muss vorher klar sein, aus welchen verschiedenen Aktivitäten sich die Arbeit in
+   etwa zusammensetzt. Sinnvoll ist es, schon am Anfang eine Grobgliederung des Aufbaus (erstes Inhaltsverzeichnis) zu
+   erstellen. Nachdem die einzelnen Aktivitäten definiert worden sind, können sie auf einer Zeitskala aufgetragen
+   werden. Dabei sollte parallel zur Erarbeitung von Lösungen der Aufgabenstellung genügend Zeit für die Verfassung des
+   Technischen Berichtes eingeplant werden. Zeitpläne werden oft zu optimistisch bemessen. Insbesondere die
+   Schlussredaktion braucht oft viel Zeit. Darunter leidet oft eine seriöse Durchsicht. Deshalb sollten unbedingt
+   Pufferzeiten eingeplant werden. Ein Zeitplan ist sinnvoll, wenn auch eine Fortschrittskontrolle durchgeführt wird.
+   
+3. **Literaturrecherche** 
+
+	Der Literaturbeschaffung kommt in einer wissenschaftlichen Arbeit mehr Bedeutung zu, als bei einer Arbeit mit
+    Projektierungsschwerpunkt. Wichtig ist eine ziel- bzw. problemorientierte Literaturrecherche. Informationen zum
+    Thema findet man z.B. in Zeitschriftenartikeln, Buchveröffentlichungen, Tagungsbänden, Dissertationen, Studien- und
+    Diplomarbeiten und dem Internet. Die Assistenz für Wasserbau verfügt eine umfassende Fachartikelsammlung zu diversen
+    Themen, in welche von den Studierenden auf Anfrage eingesehen werden kann.
+	
+
+# Vorgaben
+
+Liebe Studierende,
+
+entsprechend der Bachelor-Prüfungsordnung müssen Sie einen Arbeitsbericht zum Praxissemester (Modul PRX) abgeben. Um
+Ihnen Nachfragen zu ersparen und die Abfassung zu erleichtern, gibt es für diesen Bericht Vorgaben. Der
+Praxissemesterbericht ist in zwei Teilen vorzulegen:
+
+1. **Zwischenbericht:** Abgabe spätestens vier Wochen nach Aufnahme der Praxissemestertätigkeit.
+
+2. **Abschlussbericht:** Abgabe spätestens zwei Wochen nach Beendigung der Praxissemestertätigkeit.
+
+
+Für beide Berichte gilt:
+
+* Es gibt ein Titelblatt mit Überschrift der Art des Berichtes, Zwischen- bzw. Abschlussbericht,  über das
+  Praxissemester von - bis und in welcher Firma. Das Titelblatt soll mindestens Ihren Namen, Ihre Matrikelnummer und
+  E-Mail-Adresse sowie Name, E-Mail und Telefonnummer der betreuenden Person in der Firma aufführen.
+  
+* Der Bericht soll ein Inhaltsverzeichnis enthalten. Die Seiten sind zu nummerieren. Bei Zitaten ist ein Verzeichnis der
+  Quellen angebracht.
+  
+* Es gibt keine Vorgabe für die Anzahl der Seiten. Der Bericht soll kurz, klar und verständlich die wesentlichen Inhalte
+  darstellen. Eine Erhöhung der Seitenzahl durch langatmige Beschreibungen oder sehr große Schrift ist nicht erwünscht.
+  
+* Der Bericht wird elektronisch in der entsprechenden AULIS-Gruppe abgelegt.
+
+* Sie finden Vorlagen im entsprechenden AULIS-Ordner.
+
+
+## Der Zwischenbericht
+
+* Eine kurze Beschreibung des Unternehmens.
+
+* Die Beschreibung Ihres Arbeitsbereichs bzw. Ihrer Abteilung.
+
+* Ihre Aufgabenstellung im Praxissemester.
+
+* In der Regel soll der Zwischenbericht nicht mehr als 10 Seiten umfassen.
+
+
+## Der Abschlussbericht
+
+* Tätigkeitsbericht, inhaltlich oder zeitlich gruppiert. Aus diesem Bericht soll genau hervorgehen, was Ihr eigener
+  persönlicher Anteil an den zu erledigenden Aufgaben war.
+  
+* Besondere Ergebnisse und Erfolge Ihrer Tätigkeit.
+
+* Bewertende Zusammenfassung des Praxissemesters
+
+* Der Abschlussbericht soll Inhalte des Zwischenberichts nur soweit wiederholen, wie sie zum Verständnis des Berichts
+  notwendig sind. Die Aufnahme von Tages- bzw. Wochenberichten in Listenform in den Abschlussbericht ist nicht
+  erforderlich. In der Regel soll der Abschlussbericht nicht mehr als 30 Seiten umfassen.
+
+**Viel Erfolg!**
+
+
+# Tipps zum Schreiben eines Berichtes
+
+## Verfassen eines ersten Entwurfs
+
+Allgemein sind beim Schreiben des ersten Entwurfs folgende Punkte zu beachten:
+
+  * Die wichtigsten Punkte in einem Kapitel sollten in einem Zug geschrieben werden. Will dies nicht gelingen, wird
+    empfohlen, zu einem nächsten Kapitel überzugehen, damit man trotzdem zügig vorankommt.
+
+  * Schnell schreiben, ohne sich um fehlerhafte Formulierungen oder schlecht durchdachte Ausdrücke zu kümmern.
+  
+  * Kurze Sätze verwenden!
+  
+  * Bilder, Grafiken und Tabellen evtl. noch gar nicht einfügen (nur vermerken)
+
+## Häufige Fehler
+
+  * Verwenden von *ich* oder *wir*
+  * Substantivismus *Beamtendeutsch* 
+  * Schachtelsätze
+  * Füllwörter (Verlegenheitskonjunktionen)
+  * Passiv-Konstruktionen
+  * Helvetismen
+  * Mode- und Fremdwörter
+  * Uneinheitliche Quellenverweise im Text
+  * Mangelnde Quellenverweise und mangelnde Verweise zum Anhang, zu Plänen, etc.
+
+## Abkürzunge
+
+Abkürzungen sollen nur dort angewandt werden, wo Klarheit und Lesbarkeit des Textes nicht beeinträchtigt werden.
+Abkürzungen müssen in einem Abkürzungsverzeichnis erläutert werden, sofern es sich nicht um allgemein bekannte
+Abkürzungen handelt.
+
+## Kontrolle und Formatierung
+
+Bewährt hat sich, wenn man den fertigen Entwurf mit etwas Abstand betrachtet (z.B. mit einem zeitlichen Abstand von
+mindestens einem Tag). Beim späteren Lesen sind folgende Punkte zu prüfen: 
+
+### Kontrolle des Inhalts, der Verständlichkeit und der Sprache
+
+  * Stimmen die gemachten Aussagen mit den eigentlichen Zielen überein?
+  
+  * Sind die eigentlichen Ergebnisse genügend gut hervorgehoben und stichhaltig begründet?
+  
+  * Ist die Gliederung des Hauptteils logisch?
+  
+  * Sind die Titel kurz und verständlich?
+  
+  * Sind die Übergänge von einem Thema zum anderen klar abgefasst?
+  
+  * Sind die Abschnitte zu lang oder zu kurz?
+  
+  * Unterstützen die gewählten Abbildungen und Tabellen den Text wirklich? 
+  
+  * Sind Abbildungen und Tabellen passend beschriftet?
+  
+  * Ist die Satzstruktur klar und grammatikalisch richtig? (Kurze Sätze machen den Text leichter verständlich)
+  
+  * Sind alle Tippfehler korrigiert worden?
+  
+  * Stimmt die Fachterminologie? Ist die Wahl der Fachwörter treffend?
+  
+  * Sind die Quellenangaben vollständig?
+
+Bevor die endgültige Formatierung vorgenommen wird, sollte der Bericht einer anderen kompetenten Person unterbreitet
+werden, die konstruktive Kritik anbringen kann. Sollten beim Leser irgendwo Unklarheiten entstehen, ist dies in der
+Regel ein Indiz dafür, dass die Passagen umzuschreiben sind. 
+
+
+#### Kontrolle der Endformatierung
+
+  * Bei den Überschriften maximal drei (allerhöchstens vier) Stufen verwenden
+  
+  * Gut leserliche Schrift wählen
+  
+  * Schriftgrösse 10 – 12
+  
+  * Nicht zu engen Zeilenabstand verwenden
+  
+  * Alle Nummerierungen und Querverweise überprüfen
+  
+  * Abstände überprüfen
+  
+  * Schriftgrössen und Schriftart überprüfen
+  
+  * Abbildungen an die geeignete Position bringen und allenfalls in der Grösse anpassen
+  
+  * Seitenumbrüche kontrollieren und gegebenenfalls neu definieren
+  
+  * Seitenangaben im Inhaltsverzeichnis überprüfen
+
+
+Fremdsprachigen Studenten wird dringend empfohlen, den Technischen Bericht von einer muttersprachigen Person korrigieren
+zu lassen.
+
+Die Kontrolle des Textes in Bezug auf Inhalts-, Sprach- oder Formatierungsfehler ist sehr wichtig. Oft wird dafür
+erfahrungsgemäß zu wenig Zeit eingeplant. Nicht überarbeitete Texte erwecken einen unseriösen Eindruck. Es ist schade,
+wenn aus zeitlichen Gründen eine gründliche Überarbeitung des Berichts weggelassen wird. Der Bericht präsentiert
+schließlich das eigentliche Resultat der Arbeit! Gute Inhalte können bei einer schlechten Form eines Berichtes nicht
+ausreichend zur Geltung kommen.
+
+## Referezen {.unnumbered}
+
+::: {#refs}
+:::
