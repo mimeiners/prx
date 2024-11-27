@@ -4,7 +4,8 @@
 \PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
 %
 \documentclass[
-]{agujournal2019}
+  letterpaper,
+  DIV=11]{scrartcl}
 
 \usepackage{amsmath,amssymb}
 \usepackage{iftex}
@@ -125,11 +126,7 @@
 \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
-\usepackage{url} %this package should fix any errors with URLs in refs.
-\usepackage{lineno}
-\usepackage[inline]{trackchanges} %for better track changes. finalnew option will compile document with changes incorporated.
-\usepackage{soul}
-\linenumbers
+\KOMAoption{captions}{tableheading}
 \makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \AtBeginDocument{%
@@ -201,27 +198,18 @@
   pdfcreator={LaTeX via pandoc}}
 
 
-\journalname{Technisches Berichtswesen}
-
-\draftfalse
+\title{Vorgaben für PRX-Berichte}
+\author{Mirco Meiners}
+\date{2024-11-27}
 
 \begin{document}
-\title{Vorgaben für PRX-Berichte}
-
-\authors{Mirco Meiners\affil{1}}
-\affiliation{1}{Hochschule Bremen (HSB), }
-
-
-
-
-
-
+\maketitle
 
 
 \section{Technischer Bericht}\label{technischer-bericht}
 
 Für das Erstellen eines Technischen Berichts finden Sie im nachfolgenden
-Text Hinweise, die der Arbeit von Prof.~Dr. Boes entnommen wurden (Boes,
+Text Hinweise, die der Arbeit von Prof.~Dr. Boes entnommen wurden (Boes
 2012).
 
 Ziel eines Technischen Berichtes ist es, die Aufmerksamkeit des Lesers
@@ -513,15 +501,13 @@ präsentiert schließlich das eigentliche Resultat der Arbeit! Gute
 Inhalte können bei einer schlechten Form eines Berichtes nicht
 ausreichend zur Geltung kommen.
 
-\subsection*{Referezen}\label{referezen}
-\addcontentsline{toc}{subsection}{Referezen}
+\subsection*{Referenzen}\label{referenzen}
+\addcontentsline{toc}{subsection}{Referenzen}
 
 \phantomsection\label{refs}
 \begin{CSLReferences}{1}{0}
-\vspace{1em}
-
 \bibitem[\citeproctext]{ref-boes2012}
-Boes, R. (2012). \emph{Anforderungen und {H}inweise für das {V}erfassen
+Boes, R. 2012. \emph{Anforderungen und {H}inweise für das {V}erfassen
 eines {T}echnischen {B}erichts und die {P}räsentation von {P}rojekt-,
 {B}achelor-und {M}asterarbeiten}. ETH - Eidgenössische Technische
 Hochschule Zürich, VAW - Versuchsanstalt für Wasserbau, Hydrologie und
